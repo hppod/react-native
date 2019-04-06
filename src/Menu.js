@@ -5,8 +5,12 @@ import Simples from './components/Simples'
 import ParImpar from './components/ParImpar'
 import { Inverter, MegaSena } from './components/Multi'
 import Contador from './components/Contador'
+import Plataformas from './components/Plataformas'
 
 export default createDrawerNavigator({
+    Plataformas: {
+        screen: () => <Plataformas />
+    },
     Contador: {
         screen: () => <Contador numeroInicial={50} />
     },
