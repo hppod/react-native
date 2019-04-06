@@ -16,16 +16,16 @@ function parOuImpar(num) {
 
 export default props =>
     <View>
-        {/* {parOuImpar(props.numero)} */}
+        {parOuImpar(props.numero)}
         {/* {
             props.numero % 2 == 0
                 ? <Text style={Padrao.ex}>Par</Text>
                 : <Text style={Padrao.ex}>Impar</Text>
         } */}
-        <If test={props.numero % 2 == 0}>
+        {/* <If test={props.numero % 2 == 0}>
             <Text style={Padrao.ex}>Par</Text>
         </If>
         <If test={props.numero % 2 == 1}>
             <Text style={Padrao.ex}>Impar</Text>
-        </If>
+        </If> */}
     </View>
