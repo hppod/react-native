@@ -13,6 +13,6 @@ import { Text } from 'react-native'
 
 //UTILIZANDO ARROW FUNCTION
 export default props => [
-    <Text>Arrow 1: {props.texto}</Text>,
-    <Text>Arrow 2: {props.texto}</Text>
+    <Text key={1}>Arrow 1: {props.texto}</Text>,
+    <Text key={2}>Arrow 2: {props.texto}</Text>
 ]
