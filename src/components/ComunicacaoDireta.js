@@ -8,6 +8,11 @@ const fonte = {
     }
 }
 
+function filhosComProps(props) {
+    return React.Children.map(props.children,
+        c => React.cloneElement(c, { ...props, ...c.props }))
+}
+
 export const Filho = props =>
     <View>
         <Text {...fonte}>Filho: {props.nome} {props.sobrenome} </Text>
@@ -17,8 +22,7 @@ export const Pai = props =>
     <View>
         <Text {...fonte}>Pai: {props.nome} {props.sobrenome} </Text>
         {/* {props.children} */}
-        {React.Children.map(props.children,
-            c => React.cloneElement(c, { ...props, ...c.props }))}
+        {filhosComProps(props)}
     </View>
 
 export const Avo = props =>
