@@ -20,6 +20,15 @@ const alunos = [
     { id: 17, nome: 'Guilherme', nota: 10.0 },
     { id: 18, nome: 'Rafael', nota: 8.8 },
     { id: 19, nome: 'Juliana', nota: 9.3 },
+    { id: 21, nome: 'João', nota: 7.9 },
+    { id: 22, nome: 'André', nota: 9.1 },
+    { id: 23, nome: 'Ana', nota: 5.4 },
+    { id: 24, nome: 'Bia', nota: 6.8 },
+    { id: 25, nome: 'Claudia', nota: 7.6 },
+    { id: 26, nome: 'Tadeu', nota: 9.9 },
+    { id: 27, nome: 'Guilherme', nota: 10.0 },
+    { id: 28, nome: 'Rafael', nota: 8.8 },
+    { id: 29, nome: 'Juliana', nota: 9.3 },
 ]
 
 const itemEstilo = {
@@ -27,7 +36,13 @@ const itemEstilo = {
     height: 50,
     backgroundColor: '#DDD',
     borderWidth: 0.5,
-    borderColor: '#222'
+    borderColor: '#222',
+
+    //FLEX
+    // justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
 }
 
 export const Aluno = props =>
