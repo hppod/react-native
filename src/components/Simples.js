@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Text } from 'react-native'
 
 //DOIS TIPOS DE COMPONENTE
 //BASEADO EM CLASSE COMO O APP.JS
@@ -12,8 +12,7 @@ import { View, Text } from 'react-native'
 // }
 
 //UTILIZANDO ARROW FUNCTION
-export default props =>
-    <View>
-        <Text>Arrow 1: {props.texto}</Text>
-        <Text>Arrow 2: {props.texto}</Text>
-    </View>
+export default props => [
+    <Text>Arrow 1: {props.texto}</Text>,
+    <Text>Arrow 2: {props.texto}</Text>
+]
