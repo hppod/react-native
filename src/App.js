@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native'
 
 import Simples from './components/Simples'
 import ParImpar from './components/ParImpar'
-import { Inverter } from './components/Multi'
+import { Inverter, MegaSena } from './components/Multi'
 
 //DOIS TIPOS DE COMPONENTE
 //BASEADO EM CLASSE COMO O APP.JS
@@ -21,6 +21,7 @@ export default class App extends Component {
         <Simples texto="Flexível!!" />
         <ParImpar numero={20} />
         <Inverter texto='React Nativo' />
+        <MegaSena numeros={6} />
       </View>
     )
   }
