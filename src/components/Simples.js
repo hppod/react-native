@@ -5,6 +5,6 @@ import { Text } from 'react-native'
 //BASEADO EM CLASSE COMO O APP.JS
 //BASEADO EM FUNÇÃO, COMO SIMPLES.JS
 
-export default function () {
-    return <Text>Simples!</Text>
+export default function (props) {
+    return <Text>{props.texto}</Text>
 }

@@ -12,7 +12,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Text style={styles.f20}>App!</Text>
         {/* IMPORTANDO COMPONENTE FUNCIONAL */}
-        <Simples />
+        <Simples texto="Flexível!!" />
       </View>
     )
   }
