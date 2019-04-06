@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import Simples from './components/Simples'
 
 //DOIS TIPOS DE COMPONENTE
 //BASEADO EM CLASSE COMO O APP.JS
@@ -10,6 +11,8 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.f20}>App!</Text>
+        {/* IMPORTANDO COMPONENTE FUNCIONAL */}
+        <Simples />
       </View>
     )
   }
