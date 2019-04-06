@@ -3,7 +3,7 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import Padrao from '../estilo/Padrao'
 
-export default props => {
+export default props =>
     <View>
         {
             props.numero % 2 == 0
@@ -11,4 +11,3 @@ export default props => {
                 : <Text style={Padrao.ex}>Impar</Text>
         }
     </View>
-}

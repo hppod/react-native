@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+
 import Simples from './components/Simples'
+import ParImpar from './components/ParImpar'
 
 //DOIS TIPOS DE COMPONENTE
 //BASEADO EM CLASSE COMO O APP.JS
@@ -13,6 +15,7 @@ export default class App extends Component {
         <Text style={styles.f20}>App!</Text>
         {/* IMPORTANDO COMPONENTE FUNCIONAL */}
         <Simples texto="Flexível!!" />
+        <ParImpar numero={20} />
       </View>
     )
   }
