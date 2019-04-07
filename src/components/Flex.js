@@ -6,13 +6,24 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     norte: {
-
+        flex: 1,
+        backgroundColor: '#bdf9ed',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     centro: {
-
+        flex: 2,
+        flexDirection: 'row',
+        backgroundColor: '#f2f9bd',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: 15,
     },
     sul: {
-
+        flex: 1,
+        backgroundColor: '#bdf9c4',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     circulo: {
         width: 100,
